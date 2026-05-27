@@ -5,7 +5,8 @@ pipeline {
 
         stage('Clone') {
             steps {
-                git 'https://github.com/Chethangowda97/COMPLETE-PORTFOLIO-WEBSITE.git'
+                git branch: 'main',
+                url: 'https://github.com/Chethangowda97/COMPLETE-PORTFOLIO-WEBSITE.git'
             }
         }
 
